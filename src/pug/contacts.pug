@@ -1,0 +1,51 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                .contacts-page
+                    .container
+                        .main-title
+                            h1 Контакты
+
+                    .contacts-page__list
+                        ul
+                            li.location
+                                span RU
+                                p Россия, 192007, г. Санкт-Петербург,<br> Лиговский пр, д. 150, офис 402
+                            li.phone
+                                a(href="tel:+78123343070") +7 812 334 30 70
+                            li.map.map--1
+                        ul
+                            li.location
+                                span BY
+                                p Беларусь, 246020, г. Гомель,<br> ул. Барыкина, 303a, офис 1,2
+                            li.phone
+                                a(href="tel:+375232460880") +375 232 46 08 80
+                            li.map.map--2
+
+
+
+                    //- include modules/feedback.pug
+                    .feedback.feedback--contacts
+                        h2 Напишите нам
+                        form(action="get")
+                            ul
+                                li
+                                    input(type="text" placeholder="Ваше имя*" required)
+                                    span Дополнительная информация
+                                li
+                                    input(type="text" placeholder="Ваш телефон*" required)
+                                    textarea
+                                li
+                                    input(type="text" placeholder="Ваша эл.почта*" required)
+                                    span Отправляя данную форму, я соглашаюсь с условиями <br><a href="" download>политики конфиденциальности</a>
+                            input(type="submit")
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

@@ -1,0 +1,14 @@
+.feedback
+    h2 Оставьте заявку и мы свяжемся с вами в ближайшее время
+    form(action="get")
+        ul
+            li
+                input(type="text" placeholder="Ваше имя*" required)
+                span Дополнительная информация
+            li
+                input(type="text" placeholder="Ваш телефон*" required)
+                textarea
+            li
+                input(type="text" placeholder="Ваша эл.почта*" required)
+                span Отправляя данную форму, я соглашаюсь с условиями <br><a href="" download>политики конфиденциальности</a>
+        input(type="submit")

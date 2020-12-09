@@ -1,0 +1,60 @@
+.main-page {
+    & > .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.main-page__block {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    .main-page__inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        white-space: nowrap;
+        margin-bottom: 70px;
+    }
+    a {
+        position: relative;
+        height: 455px;
+        background-size: cover;
+    }
+    &--first {
+        a {
+            background-image: url(../images/bg1.jpg);
+            .main-page__inner {
+                background-image: url(../images/double-arrow-green.svg);
+                background-size: 295px auto;
+                background-repeat: no-repeat;
+                background-position: 90% 90%;
+            }
+        }
+        &:hover {
+            .main-page__inner {
+                background-image: url(../images/double-arrow-green-full.svg);
+            }
+        }
+    }
+    &--second {
+        a {
+            background-image: url(../images/bg2.jpg);
+            .main-page__inner {
+                background-image: url(../images/double-arrow-red.svg);
+                background-size: 295px auto;
+                background-repeat: no-repeat;
+                background-position: 90% 90%;
+            }
+        }
+        &:hover {
+            .main-page__inner {
+                background-image: url(../images/double-arrow-red-full.svg);
+            }
+        }
+    }
+}

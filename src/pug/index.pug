@@ -1,0 +1,26 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				.main-page
+					.container
+						.main-page__block.main-page__block--first
+							h2 Генеральная логистика
+							a(href="general-logistic.html")
+								.main-page__inner
+
+						.main-page__block.main-page__block--second
+							h2 Перевозка листового стекла
+							a(href="")
+								.main-page__inner
+
+
+
+		include modules/footer.pug
+		//- include modules/menu-mobile.pug
+		include modules/script.pug

@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                .page-12
+                    .container
+                        .main-title
+                            h1 Хранение стекла
+                            p Для хранения стекла мы используем <br>специально оборудованный склад в городе Вильнюс
+                    
+                    .services
+                        h2 Склад оборудован специализированным оборудованием для работы со стеклом:
+                        ul
+                            li
+                                a(href="page-6.html")
+                                    img(src="images/services-item1.png" alt="")
+                                h3 Стеллажами<br> для хранения стекла<br> PLF и DLF
+                            li
+                                a(href="page-7.html")
+                                    img(src="images/services-item2.png" alt="")
+                                h3 Кран-балкой с траверсой<br> для перегрузки<br> Джамбо стекла
+                            li
+                                a(href="page-8.html")
+                                    img(src="images/services-item3.png" alt="")
+                                h3 Стекло-роботом
+                        h2 Данное оборудование позволяет нам хранить, перегружать и компоновать заказы по требованиям клиента
+
+
+
+                    include modules/feedback.pug
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

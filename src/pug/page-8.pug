@@ -1,0 +1,71 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                .page-8
+                    .container
+                        .main-title
+                            h1 Сборные грузы
+                            p Мы специализируемся на доставке сборных грузов:
+                    .page-8__location
+                        ul
+                            li
+                                span.size2 Из Европы
+                                span.size1 через склад
+                                span.size3 в Вильнюсе
+                            li
+                                span.size2 По России
+                                span.size1 железной дорогой
+                                span.size3 с Запада на Восток
+                    .page-8__guarantee
+                        p Мы гарантируем доставку сборного груза из любой точки Европы до склада в Санкт-Петербурге
+                        span за 10 дней
+
+                    .container-cube.container-cube--mode
+                        picture
+                            img(src="images/cube-pic8.png" alt="")
+                        .container-cube__content
+                            h3 Популярные виды сборных грузов:
+                            ul.cube-list
+                                li Сырье
+                                li Запчасти
+                                li Оборудование для производств
+
+
+
+                    .advantages.container
+                        h2 Преимущества
+                        .advantages__wrapper
+                            ul
+                                li
+                                    picture
+                                        img(src="images/advantages-item1.svg" alt="")
+                                    p Гибкие тарифы,основанные на большом опыте сборных перевозок с оптимальной комплектацией и отсутствием простоя
+                                li
+                                    picture
+                                        img(src="images/advantages-item2.svg" alt="")
+                                    p Отправка небольших партий, основанная на работе с 1000-ми клиентов по сборным грузам
+                                li
+                                    picture
+                                        img(src="images/advantages-item3.svg" alt="")
+                                    p Гарантия высокой скорости обслуживания и гибкий подход к каждому клиенту
+                                li
+                                    picture
+                                        img(src="images/advantages-item2.svg" alt="")
+                                    p Собственная ERP-система позволяет нам отслеживать и контролировать все этапы перевозки в режиме реального времени
+                                li
+                                    picture
+                                        img(src="images/advantages-item3.svg" alt="")
+                                    p Доставка груза из любой точки Европы до Санкт-Петербургаза 10 дней
+
+                    
+                    include modules/feedback.pug
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

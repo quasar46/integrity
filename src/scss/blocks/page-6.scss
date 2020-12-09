@@ -1,0 +1,40 @@
+.page-6__description {
+    margin-bottom: 80px;
+    p {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 60px;
+        span {
+            font-size: 24px;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            display: flex;
+            flex-direction: column;
+            &:first-child {
+                align-items: flex-end;
+                margin-right: 110px;
+            }
+            &:last-child {
+                align-items: flex-start;
+            }
+            span {
+                &.size1 {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                &.size2 {
+                    font-size: 50px;
+                    font-weight: 700;
+                }
+                &.size3 {
+                    font-size: 34px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

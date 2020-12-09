@@ -1,0 +1,32 @@
+.scope {
+    margin-bottom: 80px;
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+
+.scope__lists {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    ul {
+        h3 {
+            font-size: 19px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        li {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            &::before {
+                background-image: url("../images/icons/cube-red.svg");
+            }
+        }
+    }
+}

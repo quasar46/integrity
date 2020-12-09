@@ -1,0 +1,117 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                .page-6
+                    .container
+                        .main-title
+                            h1 Автомобильные перевозки
+                    .advantages.advantages--2
+                        h2 Преимущества
+                        .advantages__wrapper
+                            ul
+                                li
+                                    picture
+                                        img(src="images/advantages-item1.svg" alt="")
+                                    p Предварительное подтверждение наличия автомобиля документально
+                                li
+                                    picture
+                                        img(src="images/advantages-item2.svg" alt="")
+                                    p Постоянный контроль движения грузов и сообщение о местонахождении каждый день
+                                li
+                                    picture
+                                        img(src="images/advantages-item3.svg" alt="")
+                                    p Персональный менеджер
+                            ul
+                                li
+                                    picture
+                                        img(src="images/advantages-item4.svg" alt="")
+                                    p Работа только с проверенными и надежными подрядчиками
+                                li
+                                    picture
+                                        img(src="images/advantages-item5.svg" alt="")
+                                    p Постоянный контроль времении подачи автомобиля (на всех этапаха)
+                                li
+                                    picture
+                                        img(src="images/advantages-item6.svg" alt="")
+                                    p Предоставление документов в максимально короткие сроки в виде скан-копий и оригиналов
+
+                    .container.container--mode
+                        .page-6__description
+                            p <span>Автомобильные перевозки</span> - один из самых востребованных видов услуг, и подразумевает риски,которые можно избежать при помощи обращения в специализированную транспортно-экспедиционнуюкомпанию	<span>«ИНТЕГРИТИГрупп»</span>.
+                            ul
+                                li
+                                    span.size1 Обслуживаем более
+                                    span.size2 1000 компаний
+                                    span.size3 в год
+                                li
+                                    span.size1 Перевозим более
+                                    span.size2 150 000 тонн
+                                    span.size3 в год
+
+                        .container-cube
+                            picture
+                                img(src="images/type-transport.png", alt="")
+                            .container-cube__content
+                                h3 Под загрузку подаем различные типы транспорта
+                                ul.cube-list
+                                    li Евротенты
+                                    li Изотермические
+                                    li Шаланды (внутригородские перевозки)
+                                    li Контейнерные площадки
+                                    li Отдельные машины небольшого объема:
+                                        ul.sublist
+                                            li газели
+                                            li 5-тонники
+                                            li 10-тонники
+                                    li Тралы
+
+                        .locations
+                            p.locations__description Многолетний опыт позволяет предоставлять транспорт не только на территории России, но и совершать международные автомобильные перевозки на высочайшем уровне. Для полноценного и качественного обеспечения всей логистической цепочки для наших партнеров, мы расширили географию поставок иповысили уровень предоставляемых услуг.
+                            .locations__lists
+                                ul
+                                    li.title Грузоперевозки по Европе:
+                                    li.item Италия
+                                    li.item Германия
+                                    li.item Турция
+                                    li.item Чехия
+                                    li.item Польша
+                                    li.item Финляндия
+                                    li.item Эстония
+                                    li.item многие другие страны
+                                ul
+                                    li.title Перевозки автомобильным транспортом осуществляются по многим Федеральных округам:
+                                    li.item Центральный
+                                    li.item Северо-Западный
+                                    li.item Южный федеральный округ
+                                    li.item и другие
+                                ul
+                                    li.title Мы имеем возможность предложить вам складские услуги:
+                                    li.item в Европе
+                                    li.item в Прибалтике
+                                    li.item в странах Таможенного Союза
+                                    li.item в России
+
+                        .container-cube
+                            .container-cube__content
+                                h2 Работая на качество, мы создали систему быстрой доставки за разумную цену
+                                p Предоставление отдельного транспорта или перевозка сборным грузом являются штатными и ежедневными задачами в нашей компании.
+                                h3 Предлагаем услуги по транспортировке:
+                                ul.cube-list
+                                    li опасных грузов
+                                    li грузов негабаритных размеров
+                                    li тяжеловесных грузоов
+                                p С предоставлением сопровождения и подготовкой всей разрешающей документации.
+                            picture
+                                img(src="images/delivery.png", alt="")
+
+                        include modules/feedback.pug
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

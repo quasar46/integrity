@@ -1,0 +1,25 @@
+ul.cube-list {
+    li {
+        font-size: 19px;
+        position: relative;
+        padding-left: 20px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/cube.svg");
+            width: 9px;
+            height: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 5px;
+            left: 0;
+        }
+    }
+    .sublist {
+        li {
+            &::before {
+                background-image: url("../images/icons/cube-black.svg");
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.feedback {
+    max-width: 700px;
+    margin: 0 auto;
+    h2 {
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        ul {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            li {
+                display: flex;
+                align-items: flex-end;
+                input {
+                    font-size: 14px;
+                    margin-right: 55px;
+                    max-width: 215px;
+                    width: 100%;
+                    border: none;
+                    border-bottom: 2px solid #2d2c2b;
+                    padding: 9px 0;
+                    margin-bottom: 20px;
+                }
+                textarea {
+                    border: none;
+                    border-bottom: 2px solid #2d2c2b;
+                    resize: none;
+                    max-width: 400px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                span {
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    a {
+                        font-size: 14px;
+                        color: $color-text;
+                    }
+                }
+            }
+        }
+        input[type="submit"] {
+            align-self: center;
+            border-radius: 25px;
+        }
+    }
+    &--contacts {
+        display: flex;
+        max-width: 1200px;
+        h2 {
+            text-transform: uppercase;
+            white-space: nowrap;
+            margin-right: 60px;
+        }
+        form {
+            flex: 1 0 auto;
+            input[type="submit"] {
+                align-self: flex-start;
+            }
+            ul {
+                li {
+                    input {
+                        flex: 1 0 215px;
+                    }
+                    textarea {
+                        flex: 1 0 auto;
+                        max-width: 550px;
+                    }
+                }
+            }
+        }
+    }
+}

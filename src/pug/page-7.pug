@@ -1,0 +1,93 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                .page-7
+                    .container
+                        .main-title
+                            h1 Железнодорожные перевозки
+                    .advantages.container
+                        h2 Преимущества
+                        .advantages__wrapper
+                            ul
+                                li
+                                    picture
+                                        img(src="images/advantages-item1.svg" alt="")
+                                    p Опыт железнодорожных перевозок 17 лет — возможность предложить оптимальное решение по доставке, взяв всю организацию на себя
+                                li
+                                    picture
+                                        img(src="images/advantages-item2.svg" alt="")
+                                    p Высокая экономическая эффективность не срочных грузов в железнодорожных перевозках
+                                li
+                                    picture
+                                        img(src="images/advantages-item3.svg" alt="")
+                                    p Независимость железнодорожных перевозок от погодных условий гарантирует доставку в обозначенный срок и позволяет довезти груз в самые отдаленные места
+                            ul
+                                li
+                                    picture
+                                        img(src="images/advantages-item4.svg" alt="")
+                                    p Нет весовых ограничений партии
+                                li
+                                    picture
+                                        img(src="images/advantages-item5.svg" alt="")
+                                    p Осуществляется в ускоренных контейнерных поездах по графикус фиксированной датой поставки
+                                li
+                                    picture
+                                        img(src="images/advantages-item6.svg" alt="")
+                                    p Потенциальному клиенту легко планировать отгрузки
+
+                    .container-cube
+                        .container-cube__content
+                            h3 Популярные виды продукции, перевозимые железной дорогой
+                            ul.cube-list
+                                li Заводское оборудование
+                                li Пищевые продукты
+                                li Товары массового потребления
+                                li Металлопродукция
+                                li Строительные материалы
+                                li Бытовая электроника
+                                li Мебель
+                        picture
+                            img(src="images/rail.png" alt="")
+
+                    .steps
+                        .container
+                            h2 ДЛЯ НАШИХ КЛИЕНТОВ МЫ ОРГАНИЗУЕМ:
+                            .steps__wrapper
+                                .item
+                                    p Мультимодальные перевозки с использованием всех видов транспорта
+                                    span 1
+                                .item
+                                    p Российско-китайские перевозки по железной дороге
+                                    span 2
+                                .item
+                                    p Предложим на выбор разные варианты железнодорожной доставки по сроками стоимости
+                                    span 3
+                                .item
+                                    p Погрузим/разгрузим продукцию, заберём от клиента и доставим до железнодорожного терминала
+                                    span 4
+
+                    .container-cube.container-cube--mode
+                        picture
+                            img(src="images/cube-pic7.png" alt="")
+                        .container-cube__content
+                            h3 Осуществляем железнодорожные перевозки разными типами подвижного состава
+                            ul.cube-list
+                                li Контейнеры (20 и 40 фут)
+                                li Вагоны
+                                li Полувагоны
+                                li Платформы
+                                li Контейнеры Pallet Wide
+
+
+
+                    include modules/feedback.pug
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

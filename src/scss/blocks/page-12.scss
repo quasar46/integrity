@@ -1,0 +1,21 @@
+.page-12 {
+    .services {
+        max-width: 1100px;
+        h2 {
+            font-size: 25px;
+            text-transform: initial;
+        }
+        ul {
+            margin-bottom: 90px;
+            li {
+                flex: 1 0 260px;
+                max-width: 260px;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-transform: initial;
+                }
+            }
+        }
+    }
+}

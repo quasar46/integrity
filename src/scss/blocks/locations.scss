@@ -1,0 +1,44 @@
+.locations {
+    background-image: url("../images/mainland1.svg");
+    background-size: 930px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 120px;
+}
+.locations__description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.locations__lists {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        margin-right: 20px;
+        li.title {
+            font-size: 23px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        li.item {
+            position: relative;
+            padding-left: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 9px;
+                height: 10px;
+                background-image: url("../images/icons/cube.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                left: 0;
+                top: 5px;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

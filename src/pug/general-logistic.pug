@@ -1,0 +1,71 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                .general-logistic
+                    .container
+                        .main-title
+                            h1 Генеральная логистика
+                            p Логистика в соответствии с вашими требованиями
+                        .services
+                            h2 Наши услуги
+                            ul
+                                li
+                                    a(href="page-6.html")
+                                        img(src="images/services-item1.png" alt="")
+                                    h3 Автомобильные перевозки
+                                    span Российские
+                                    span Международные
+                                li
+                                    a(href="page-7.html")
+                                        img(src="images/services-item2.png" alt="")
+                                    h3 Железнодорожные перевозки
+                                li
+                                    a(href="page-8.html")
+                                        img(src="images/services-item3.png" alt="")
+                                    h3 Сборные грузы
+                                    span Из Европы через склад в Вильнюсе
+                                    span На дальний Восток железной дорогой
+                    .container
+                        .advantages
+                            h2 Преимущества
+                            .advantages__wrapper
+                                ul
+                                    li
+                                        picture
+                                            img(src="images/advantages-item1.svg" alt="")
+                                        p Подбор правильного оборудования для любых логистических задач
+                                    li
+                                        picture
+                                            img(src="images/advantages-item2.svg" alt="")
+                                        p Коллектив профессионально подготовленных водителей с большим опытом в международных перевозках
+                                    li
+                                        picture
+                                            img(src="images/advantages-item3.svg" alt="")
+                                        p Современный и постоянно расширяющийся собственный транспортный парк
+                                ul
+                                    li
+                                        picture
+                                            img(src="images/advantages-item4.svg" alt="")
+                                        p Гибкая ценовая политика
+                                    li
+                                        picture
+                                            img(src="images/advantages-item5.svg" alt="")
+                                        p Большая георафия поставок и надёжные доставки по сложным маршрутам
+                                    li
+                                        picture
+                                            img(src="images/advantages-item6.svg" alt="")
+                                        p Нам доверяют свои грузы крупные российские и международные компании с 2006 года
+
+                        include modules/feedback.pug
+
+
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

@@ -1,0 +1,41 @@
+.kinds {
+    background-color: #f1ead1;
+    padding: 60px 0;
+    margin-bottom: 90px;
+
+    h2 {
+        font-size: 33px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+}
+
+.kinds__lists {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    span {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        font-size: 90px;
+        font-weight: 700;
+        color: $color-white;
+        z-index: -1;
+    }
+    ul {
+        position: relative;
+        width: calc(100% / 3 - 100px);
+        z-index: 10;
+        li {
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+    }
+}

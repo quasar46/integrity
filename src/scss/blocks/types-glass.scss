@@ -1,0 +1,30 @@
+.types-glass {
+    margin-bottom: 90px;
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            width: calc(100% / 5 - 20px);
+            height: 90px;
+            background-color: #eaeaea;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            .small {
+                font-size: 13px;
+            }
+        }
+    }
+}

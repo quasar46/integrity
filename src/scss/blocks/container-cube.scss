@@ -1,0 +1,55 @@
+.container-cube {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+    picture {
+        max-width: 300px;
+        flex: 1 0 300px;
+    }
+    &--mode {
+        picture {
+            margin-right: 90px;
+        }
+    }
+}
+
+.container-cube__content {
+    h3 {
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    // h3 {
+    //     font-size: 18px;
+    //     font-weight: 700;
+    //     margin-bottom: 10px;
+    // }
+    ul {
+        margin-bottom: 20px;
+        li {
+            position: relative;
+            padding-left: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 9px;
+                height: 10px;
+                background-image: url("../images/icons/cube.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                left: 0;
+                top: 4px;
+            }
+        }
+    }
+}
